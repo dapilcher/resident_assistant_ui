@@ -1,0 +1,336 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------ ~*STYLES*~ --------------- */
+
+html {
+	height: 100%;
+	font-size: 12px;
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	min-height: 100%;
+	margin: 0;
+	display: flex;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	margin: 0.5rem 0;
+}
+
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	font-size: 1.5rem;
+}
+h3 {
+	font-size: 1.17rem;
+}
+h4 {
+	font-size: 1rem;
+}
+h5 {
+	font-size: 0.83rem;
+}
+h6 {
+	font-size: 0.67rem;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 0.3rem 0;
+}
+
+hr {
+	border: none;
+	border-top: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+button {
+	background: none;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 0.9rem;
+	padding: 0.2rem 0.5rem;
+	margin: 0 0.7rem;
+	box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+	/* box-shadow: 0 2px rgba(0, 0, 0, 0.1); */
+	transform: scale(1.03);
+	/* cursor: pointer; */
+}
+
+.flex-container {
+	display: flex;
+}
+
+#header {
+	background: lightcoral;
+	padding: 1rem;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+#main {
+	display: flex;
+}
+
+.left {
+	flex: 0 0 12vw;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#sidebar {
+	margin: 10rem 1rem;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	font-size: 14px;
+}
+
+.sidebar-link {
+	margin: 0.5rem 0;
+}
+
+.right {
+	flex: 1;
+}
+
+.content,
+.data-page {
+	padding: 2rem;
+}
+
+.data-table-container {
+	margin-top: 2rem;
+}
+
+.data-table-header {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+.data-page .data-table {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex: 1;
+}
+
+.data-table {
+	margin: 1rem;
+}
+
+.data-table,
+.data-table th,
+.data-table td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+	padding: 0.7rem 1rem;
+}
+
+.data-table th {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	background: rgb(196, 226, 247);
+}
+
+.odd-table-row {
+	background: rgba(196, 226, 247, 0.3);
+}
+
+.data-page .data-item {
+	margin: 1rem;
+	flex-basis: 20rem;
+}
+
+.data-item-value {
+	padding: 0.2rem 0;
+}
+
+.data-item:hover {
+	transform: scale(1.01);
+	cursor: pointer;
+}
+
+.new-data-item-link:hover .new-data-item-plus {
+	transform: scaleY(1) translateX(0) rotate(90deg);
+}
+
+.new-data-item-plus {
+	margin-left: 0.5rem;
+	transition: transform 0.2s;
+	transform: scaleY(0) translateX(-100%) rotate(0deg);
+}
+
+.new-data-form {
+	margin: 2rem;
+	width: 25rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.new-data-form-element {
+	padding: 0.3rem 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.new-data-form-input {
+	flex: 1;
+	margin-left: 0.5rem;
+}
+
+.new-data-form button {
+	max-width: 75px;
+	align-self: flex-end;
+}

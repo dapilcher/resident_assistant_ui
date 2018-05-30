@@ -1,0 +1,23 @@
+{
+	"name": "admin_api",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"server": "nodemon server.js",
+		"client": "cd client && npm run start",
+		"buildclient": "cd client && npm run build",
+		"dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+		"build": "concurrently --kill-others-on-fail \"npm run server\" \"npm run buildclient\""
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.16.3",
+		"morgan": "^1.9.0",
+		"mysql": "^2.15.0"
+	},
+	"devDependencies": {
+		"concurrently": "^3.5.1"
+	}
+}

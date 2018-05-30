@@ -1,0 +1,2 @@
+Create individual forms for data input and editing
+Create PUT, POST, DELETE API routes
