@@ -4,7 +4,7 @@ Backend UI for Resident Assistant Alexa skill
 
 ## Getting Started
 
-You will need (node)[https://nodejs.org/en/] installed on your machine.
+You will need [node](https://nodejs.org/en/) installed on your machine.
 
 ### Install dependencies
 
